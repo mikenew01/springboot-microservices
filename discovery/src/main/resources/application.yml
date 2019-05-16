@@ -1,12 +1,15 @@
 spring:
   application:
     name: registry
+
 server:
-  port: 8081
+  port: 8761
 
 eureka:
+  instance:
+    hostname: localhost
   client:
-    register-with-eureka: false
-    fetch-registry: false
     service-url:
       defaultZone: http://localhost:${server.port}/eureka/
+    fetch-registry: false
+    register-with-eureka: false
