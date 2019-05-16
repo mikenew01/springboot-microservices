@@ -1,0 +1,3 @@
+io\mk\models\Course.class
+io\mk\repositories\CourseRepository.class
+io\mk\models\AbstractEntity.class
