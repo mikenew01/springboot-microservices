@@ -8,7 +8,9 @@ import javax.validation.constraints.NotNull;
 @Entity
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
+@Builder
 public class Course implements AbstractEntity {
 
     @Id

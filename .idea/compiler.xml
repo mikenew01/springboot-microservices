@@ -9,11 +9,13 @@
         <module name="core" />
         <module name="course" />
         <module name="gateway" />
+        <module name="auth" />
         <module name="discovery" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="academy-microservices" target="1.8" />
+      <module name="auth" target="11" />
       <module name="core" target="11" />
       <module name="course" target="11" />
       <module name="discovery" target="11" />
@@ -22,6 +24,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="auth" options="-parameters" />
       <module name="core" options="-parameters" />
       <module name="course" options="-parameters" />
       <module name="discovery" options="-parameters" />
